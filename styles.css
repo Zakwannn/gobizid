@@ -1,18 +1,80 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header {
-    background-color: #fff;
+    background-color: #89afe8; /* Warna hijau cerah */
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 3px solid #2268ff; /* Garis bawah warna oranye */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow untuk tampilan lebih menonjol */
+    font-family: 'Poppins', sans-serif; /* Gunakan font Poppins di header */
+}
+
+/* Logo styling */
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Spasi antar link */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600; /* Tebal dengan font Poppins */
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #0e1570; /* Warna hover kuning */
+}
+
+/* Authentication buttons */
+.auth-buttons {
+    display: flex;
+    gap: 35px; /* Spasi antar tombol */
+}
+
+.auth-buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.auth-buttons .btn-signup {
+    color: #0e1570; /* Warna hover kuning */
+    background-color: #0e1570; 
+    color: #fff;
+}
+
+.auth-buttons .btn-login {
+    background-color: #0e1570;
+    color: #fff;
+    border: 2px solid #89afe8;
+}
+
+.auth-buttons .btn-signup:hover,
+.auth-buttons .btn-login:hover {
+    transform: scale(1.05); /* Efek zoom saat dihover */
+    background-color: #89afe8; /* Warna hijau tua untuk hover */
+    color: #fff;
 }
 
 .logo img {
